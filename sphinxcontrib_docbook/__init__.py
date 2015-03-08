@@ -333,7 +333,7 @@ class DocbookXMLBuilder(Builder):
 
 
 def setup(app):
-    app.add_builder(DocbookXMLBuilder):q
+    app.add_builder(DocbookXMLBuilder)
 
 from ._version import get_versions
 
