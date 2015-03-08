@@ -2,9 +2,13 @@
 sphinxcontrib-docbook
 =====================
 
-Your project was successfully set up with PyScaffold 2.0.2.
-Following features are available:
 
+A Sphinx builder that makes a Sphinx write out docbook xml.
+
+
+-----------------
+PyScaffold README
+-----------------
 
 Configuration & Packaging
 =========================
