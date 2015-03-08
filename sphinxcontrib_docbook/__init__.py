@@ -3,7 +3,7 @@ from docutils.nodes import NodeVisitor
 from sphinx.builders import Builder
 
 from xml.sax.saxutils import XMLGenerator
-import StringIO
+from six import StringIO
 import os.path
 import os
 
@@ -23,7 +23,7 @@ class DocbookVisitor(NodeVisitor):
     def __init__(self, document):
         NodeVisitor.__init__(self, document)
 
-        self._output = StringIO.StringIO()
+        self._output = StringIO()
         self.generator = XMLGenerator(self._output, "utf-8")
         self.generator.outf = self._output
 
