@@ -18,6 +18,7 @@ Contents
    License <license>
    Authors <authors>
    Module Reference <_rst/modules>
+   changes
 
 
 Indices and tables

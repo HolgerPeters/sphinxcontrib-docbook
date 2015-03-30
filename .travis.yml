@@ -1,0 +1,12 @@
+language: python
+python: 2.7
+env:
+  - TOX_ENV=py34 COVERAGE="true"
+  - TOX_ENV=py27 COVERAGE="true"
+  - TOX_ENV=docs COVERAGE="false"
+install:
+  - pip install tox python-coveralls
+script:
+  - tox -e $TOX_ENV
+after_success:
+  - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi

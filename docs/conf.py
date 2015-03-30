@@ -110,7 +110,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -236,9 +236,4 @@ python_version = '.'.join(map(str, sys.version_info[0:2]))
 intersphinx_mapping = {
     'sphinx': ('http://sphinx.pocoo.org', None),
     'python': ('http://docs.python.org/' + python_version, None),
-    'matplotlib': ('http://matplotlib.sourceforge.net', None),
-    'numpy': ('http://docs.scipy.org/doc/numpy', None),
-    'sklearn': ('http://scikit-learn.org/stable', None),
-    'pandas': ('http://pandas.pydata.org/pandas-docs/stable', None),
-    'scipy': ('http://docs.scipy.org/doc/scipy/reference/', None),
 }
