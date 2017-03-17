@@ -5,8 +5,10 @@ env:
   - TOX_ENV=py27 COVERAGE="true"
   - TOX_ENV=docs COVERAGE="false"
 install:
-  - pip install tox python-coveralls
+  - pip install python-coveralls
+  - pip install -r requirements.txt
+  - pip install -e .
 script:
-  - tox -e $TOX_ENV
+  - python setup.py test
 after_success:
   - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi

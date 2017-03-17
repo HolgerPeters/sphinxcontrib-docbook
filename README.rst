@@ -1,16 +1,33 @@
+=====================
 sphinxcontrib-docbook
 =====================
 
-
-
 .. image:: https://travis-ci.org/HolgerPeters/sphinxcontrib-docbook.svg?branch=master
    :target: https://travis-ci.org/HolgerPeters/sphinxcontrib-docbook
-    
-.. image:: https://coveralls.io/repos/HolgerPeters/sphinxcontrib-docbook/badge.svg 
-   :target: https://coveralls.io/r/HolgerPeters/sphinxcontrib-docbook 
-    
+
+.. image:: https://coveralls.io/repos/HolgerPeters/sphinxcontrib-docbook/badge.svg
+   :target: https://coveralls.io/r/HolgerPeters/sphinxcontrib-docbook
+
 A Sphinx builder that makes a Sphinx write out docbook xml.
 
 .. note::
 
    Very much work in progress.
+
+
+Development
+===========
+
+To develop with this package, install it in development mode
+into a virtual environment::
+
+    cd sphinxcontrib_docbook
+    pip install -e .
+
+You can run the tests with:::
+
+    python setup.py test
+
+or::
+
+    py.test

@@ -1,0 +1,12 @@
+Sphinx
+six
+lxml
+setuptools_scm
+
+
+pytest-cov
+hypothesis-pytest
+yapf
+pytest-flake8
+
+-e .
